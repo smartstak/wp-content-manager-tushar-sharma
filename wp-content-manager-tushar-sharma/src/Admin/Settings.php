@@ -11,6 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+use WPCM\Cache\CacheManager;
+
 /**
  * Settings class
  */
@@ -23,6 +25,9 @@ class Settings {
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'menu' ) );
 		add_action( 'admin_init', array( $this, 'register' ) );
+
+		add_action( 'update_option_' . self::OPTION, array( $this, 'on_options_updated'), 10, 2 );
+		add_action( 'add_option_' . self::OPTION, array( $this, 'on_options_updated'), 10, 2 );
 	}
 
 	/**
@@ -173,5 +178,21 @@ class Settings {
 			</form>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Clear promo blocks cache when options updated
+	 * 
+	 * @param mixed $old_value Old value. 
+	 * @param mixed $value value.
+	 *
+	 * @return void
+	 */
+	public function on_options_updated( $old_value, $value ): void {
+		if( $old_value === $value ) {
+			return;
+		}
+
+		CacheManager::flush();
 	}
 }
