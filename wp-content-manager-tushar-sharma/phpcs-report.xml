@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="3.13.5">
+<file name="autoload.php">
+ <error line="1" column="1" severity="warning" message="File has mixed line endings; this may cause incorrect results" source="Internal.LineEndings.Mixed"/>
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="7" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\Admin\CustomPostType.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\Admin\MetaBoxes.php">
+ <error line="1" column="1" severity="warning" message="File has mixed line endings; this may cause incorrect results" source="Internal.LineEndings.Mixed"/>
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+ <error line="99" column="46" severity="error" message="Detected usage of a possibly undefined superglobal array index: $_POST['wpcm_cta_text']. Check that the array index exists before using it." source="WordPress.Security.ValidatedSanitizedInput.InputNotValidated"/>
+ <error line="105" column="38" severity="error" message="Detected usage of a possibly undefined superglobal array index: $_POST['wpcm_cta_url']. Check that the array index exists before using it." source="WordPress.Security.ValidatedSanitizedInput.InputNotValidated"/>
+</file>
+<file name="src\Admin\Settings.php">
+ <error line="1" column="1" severity="warning" message="File has mixed line endings; this may cause incorrect results" source="Internal.LineEndings.Mixed"/>
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\API\AjaxController.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\API\RestController.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="12" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\Cache\CacheManager.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+ <error line="31" column="5" severity="error" message="Doc comment for parameter &quot;$data&quot; missing" source="Squiz.Commenting.FunctionComment.MissingParamTag"/>
+ <error line="31" column="5" severity="error" message="Doc comment for parameter &quot;$ttl&quot; missing" source="Squiz.Commenting.FunctionComment.MissingParamTag"/>
+</file>
+<file name="src\Frontend\Block.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\Frontend\Shortcode.php">
+ <error line="1" column="1" severity="warning" message="File has mixed line endings; this may cause incorrect results" source="Internal.LineEndings.Mixed"/>
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="9" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="src\Helpers.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="12" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+ <error line="40" column="18" severity="error" message="date() is affected by runtime timezone changes which can cause date/time to be incorrectly displayed. Use gmdate() instead." source="WordPress.DateTime.RestrictedFunctions.date_date"/>
+ <error line="47" column="17" severity="warning" message="Detected usage of meta_query, possible slow query." source="WordPress.DB.SlowDBQuery.slow_db_query_meta_query"/>
+ <error line="56" column="17" severity="warning" message="Detected usage of meta_key, possible slow query." source="WordPress.DB.SlowDBQuery.slow_db_query_meta_key"/>
+</file>
+<file name="src\Plugin.php">
+ <error line="4" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="17" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+<file name="wp-content-manager-tushar-sharma.php">
+ <error line="15" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
+ <error line="18" column="11" severity="error" message="Inline comments must end in full-stops, exclamation marks, or question marks" source="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+</file>
+</checkstyle>
+

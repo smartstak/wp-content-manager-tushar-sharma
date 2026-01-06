@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpcm/promo-blocks",
+  "title": "Promo Blocks",
+  "category": "widgets",
+  "description": "This block shows Promo blocks.",
+  "textdomain": "wp-content-manager-tushar-sharma",
+  "supports": {
+    "html": false
+  }
+}

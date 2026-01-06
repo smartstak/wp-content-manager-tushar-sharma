@@ -1,0 +1,9 @@
+.promo-block-fields__paragraph {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &label {
+        font-size: 14px;
+    }
+}

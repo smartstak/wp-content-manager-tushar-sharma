@@ -1,0 +1,40 @@
+{
+    "name": "tushar/wp-content-manager",
+    "description": "WP content manager for Promo Blocks",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Tushar Sharma",
+            "email": "smartstak@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WPCM\\": "src/"
+        }
+    },
+    "scripts": {
+    "format": "vendor/bin/phpcbf --standard=phpcs.xml --report-summary --report-source",
+    "lint": "vendor/bin/phpcs --standard=phpcs.xml --report-full --report-checkstyle=phpcs-report.xml",
+    "lint:json": "vendor/bin/phpcs --standard=phpcs.xml --report-full --report-checkstyle=phpcs-report.json"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.13.4",
+    "wp-coding-standards/wpcs": "^3.0.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
+    "phpcompatibility/phpcompatibility-wp": "*"
+  },
+  "require": {}
+}
