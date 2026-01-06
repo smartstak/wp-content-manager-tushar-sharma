@@ -5,12 +5,13 @@ This plugin provides a dynamic promo block system for managing time-bound promot
 
 ## Setup instructions
 1. Upload plugin to `/wp-content/plugins`
-2. Run `composer dump-autoload`
-3. Activate plugin
-4. Configure settings under **Settings → Dynamic Content**
-5. Go to **Promo Blocks** -> **Add New Promo Block**
-6. Insert Shortcode **[dynamic_promo]** wherever you want to display **Promo Blocks**
-7. That's it.
+2. Then go to that `wp-content-manager-tushar-sharma` plugin folder
+3. Run `composer install` & then `composer dump-autoload`
+4. Activate plugin
+5. Configure settings under **Settings → Dynamic Content**
+6. Go to **Promo Blocks** -> **Add New Promo Block**
+7. Insert Shortcode **[dynamic_promo]** wherever you want to display **Promo Blocks**
+8. That's it.
 
 ## Shortcode
 - [dynamic_promo]
