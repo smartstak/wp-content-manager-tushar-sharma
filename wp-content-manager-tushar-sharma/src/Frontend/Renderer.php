@@ -1,6 +1,6 @@
 <?php
 /**
- * Renderer class file.
+ * Renderer class file for showing promo blocks content.
  *
  * @package WPCM\Frontend
  */
