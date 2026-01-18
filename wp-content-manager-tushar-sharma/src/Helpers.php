@@ -1,6 +1,6 @@
 <?php
 /**
- * Helper class file.
+ * Helper class file which includes necessary methods.
  *
  * @package WPCM
  */
